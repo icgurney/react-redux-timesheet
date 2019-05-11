@@ -23,7 +23,7 @@ class Projects extends React.Component {
             New Project
           </Button>
         </Link>
-        <ProjectTable projects={projects} />
+        <ProjectTable projects={projects} onDelete={onDelete} onRestore={onRestore} />
       </div>
     );
   }

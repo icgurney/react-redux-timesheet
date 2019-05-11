@@ -17,7 +17,7 @@ class ProjectTable extends Component {
         </thead>
         <tbody>
           {projects.map(project => (
-            <ProjectRow project={ project } key={ project._id } />
+            <ProjectRow project={ project } key={ project._id } onDelete={onDelete} onRestore={onRestore} />
           ))}
         </tbody>
       </Table>
